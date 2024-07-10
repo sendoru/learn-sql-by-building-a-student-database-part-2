@@ -119,3 +119,10 @@ pip
 pip install psycopg2
 conda actviate
 python
+ls --color=auto /dev
+cat /dev/stdin
+read what
+what
+$what
+cat $what
+echo $what
