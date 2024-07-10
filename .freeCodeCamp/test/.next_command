@@ -225,3 +225,5 @@ echo -n c3037cb4-18a6-4912-9c40-9e985cc6ebeb
 cat /proc/self/environ
 echo -n c3037cb4-18a6-4912-9c40-9e985cc6ebeb
 psql --username=freecodecamp --dbname=postgres
+ls --color=auto
+./student_info.sh
