@@ -274,3 +274,7 @@ echo "$($PSQL " SELECT distinct(course_name) FROM students FULL JOIN majors usin
 echo "$($PSQL " SELECT distinct(courses.course_name) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or student_id like 'Obie Hilpert' ORDER BY courses.course_name DESC " )"
 echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or student_id like 'Obie Hilpert' ORDER BY course DESC " )"
 echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or (first_name like 'Obie' and last_name like 'Hilpert) ORDER BY course DESC " )"
+echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or (first_name like 'Obie' and last_name like 'Hilpert) ORDER BY course DESC " )"
+__vsc_prompt_cmd_original
+echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or (first_name like 'Obie' and last_name like 'Hilpert') ORDER BY course DESC " )"
+./student_info.sh
