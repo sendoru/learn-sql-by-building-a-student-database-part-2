@@ -236,3 +236,4 @@ echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY cou
 echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY course DESC LIMIT 5 " )"
 echo "$($PSQL " SELECT course FROM courses WHERE course like '_e%s' ORDER BY course DESC LIMIT 5 " )"
 ./student_info.sh
+psql --username=freecodecamp --dbname=postgres
