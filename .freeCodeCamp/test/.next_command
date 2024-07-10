@@ -307,3 +307,6 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) WHERE student_id is null or (first_name like 'Obie' and last_name like 'Hilpert') ORDER BY course " )"
+echo "$($PSQL " SELECT distinct(course) FROM students FULL JOIN majors using(major_id) FULL JOIN majors_courses using(major_id) FULL JOIN courses using(course_id) GROUP BY course HAVING count(student_id) = 1 ORDER BY course " )"
+__vsc_prompt_cmd_original
+./student_info.sh
