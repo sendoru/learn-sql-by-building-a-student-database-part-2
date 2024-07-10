@@ -238,3 +238,4 @@ echo "$($PSQL " SELECT course FROM courses WHERE course like '_e%s' ORDER BY cou
 ./student_info.sh
 psql --username=freecodecamp --dbname=postgres
 ./student_info.sh
+./student_info.sh
