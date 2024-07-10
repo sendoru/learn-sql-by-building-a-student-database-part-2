@@ -82,3 +82,4 @@ chomd +x student_info.sh
 chmod +x student_info.sh
 uname -a
 cat /etc/os-release
+./student_info.sh
