@@ -131,3 +131,4 @@ ls --color=auto
 ls --color=auto
 ls --color=auto
 ls --color=auto
+./student_info.sh
