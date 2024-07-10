@@ -80,3 +80,5 @@ psql -U postgres < students.sql
 touch student_info.sh
 chomd +x student_info.sh
 chmod +x student_info.sh
+uname -a
+cat /etc/os-release
