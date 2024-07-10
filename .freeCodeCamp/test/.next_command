@@ -83,3 +83,8 @@ chmod +x student_info.sh
 uname -a
 cat /etc/os-release
 ./student_info.sh
+ls --color=auto -a
+ls --color=auto -v
+ls --color=auto -a
+ls --color=auto -l
+ls --color=auto -al
