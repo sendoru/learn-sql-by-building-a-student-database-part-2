@@ -230,3 +230,8 @@ ls --color=auto
 ls --color=auto
 ls --color=auto
 ./student_info.sh
+echo "asdf asdf "
+PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only -c"
+echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY course LIMIT 5 " )"
+echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY course DESC LIMIT 5 " )"
+echo "$($PSQL " SELECT course FROM courses WHERE course like '_e%s' ORDER BY course DESC LIMIT 5 " )"
