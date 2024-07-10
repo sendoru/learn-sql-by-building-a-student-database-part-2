@@ -235,3 +235,4 @@ PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only
 echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY course LIMIT 5 " )"
 echo "$($PSQL " SELECT course FROM courses WHERE course like '%e%s' ORDER BY course DESC LIMIT 5 " )"
 echo "$($PSQL " SELECT course FROM courses WHERE course like '_e%s' ORDER BY course DESC LIMIT 5 " )"
+./student_info.sh
