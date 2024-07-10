@@ -126,3 +126,8 @@ what
 $what
 cat $what
 echo $what
+ls --color=auto
+ls --color=auto
+ls --color=auto
+ls --color=auto
+ls --color=auto
